@@ -1,0 +1,31 @@
+<html ng-app>
+<head>
+	<script src="../angular-1.2.27/angular.min.js"></script>
+	<script src="controller.js"></script>
+</head>
+<body>
+	<div ng-controller='HelloController'>
+		<p>{{greeting.text}},World!!!</p>
+	</div>
+
+	<div ng-controller='CalculatorController'>
+		<input type="text" ng-model='numa'/> 
+		<input type="BUTTON" ng-model='func'/> 
+		<input type="text" ng-model='numb'/>
+		<input type="BUTTON" value="="/> 
+		<input type="text" ng-model='sum'/> <br>
+		<input type="BUTTON" value="0" ng-click="formNum(0)"/>
+		<input type="BUTTON" value="1" ng-click="formNum(1)"/>
+		<input type="BUTTON" value="2" ng-click="formNum(2)"/><br>
+		<input type="BUTTON" value="3" ng-click="formNum(3)"/>
+		<input type="BUTTON" value="4" ng-click="formNum(4)"/>
+		<input type="BUTTON" value="5" ng-click="formNum(5)"/><br>
+		<input type="BUTTON" value="6" ng-click="formNum(6)"/>
+		<input type="BUTTON" value="7" ng-click="formNum(7)"/>
+		<input type="BUTTON" value="8" ng-click="formNum(8)"/><br>
+		<input type="BUTTON" value="+" ng-click="addNum()"/>
+		<input type="BUTTON" value="9" ng-click="formNum(9)"/>
+		<input type="BUTTON" value="-" ng-click="reduceNum()"/>
+	</div>
+</body>
+</html>
