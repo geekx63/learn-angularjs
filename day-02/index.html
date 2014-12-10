@@ -1,0 +1,17 @@
+<html ng-app='myApp'>
+<head>
+<script src="../angular-1.2.27/angular.min.js"></script>
+<script src="controller.js"></script>
+</head>
+<body>
+	<div ng-controller='TextController'>
+		<p>{{someText.message}}</p>
+	</div>
+	<div ng-controller='StartUpController'>
+		<form>
+			Starting:<input ng-change='computeNeeded()' ng-model='funding.startingEstimate'>
+			Recommendation:{{funding.needed}}
+		</form>
+	</div>
+</body>
+</html>
